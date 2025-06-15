@@ -1,0 +1,25 @@
+{
+  "name": "virtual-backend-main",
+  "version": "1.0.0",
+  "description": "Backend for the Human Virtual Assistant",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js --ext js"
+  },
+  "author": "TAMILVANAN V M",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "browserslist": "^4.24.4",
+    "caniuse-lite": "^1.0.30001707",
+    "nodemon": "^3.0.1"
+  }
+}

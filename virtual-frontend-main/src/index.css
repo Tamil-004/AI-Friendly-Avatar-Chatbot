@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Optional fallback background image */
+body {
+  background: url('bbg.jpg') no-repeat center center;
+  background-size: cover;
+  background-image: url('bbg.jpg');
+  
+}
+
+/* Video container */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Root React content area */
+#root {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Optional theme class */
+body.greenScreen {
+  background-color: #8000ff;
+  background-image: url('bbg.jpg');
+  background-size: cover;
+
+  
+}
+.chat-box {
+  position: fixed;
+  bottom: 15px;
+  right: 1000px;
+  width: 250px;
+  height: 300px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+}
+.pointer-events-auto {
+  scroll-behavior: smooth;
+}
