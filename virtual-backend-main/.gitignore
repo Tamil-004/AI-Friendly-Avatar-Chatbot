@@ -1,4 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
+
+# Local env
+*.local
 .env
-node_modules
-bin
-audios/message_*
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+coqui_env/
+tts-env/
+
+# Editor files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary or generated files/folders
+*.sqlite3
+*.db
+output.wav
+audios/
+uploads/
+uploaded_voices/
+user_voices/
+voice_samples/
+outputs/
+tts_output/
+tmp/
